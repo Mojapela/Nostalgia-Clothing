@@ -1,27 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import Product from "./pages/Product";
-import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/product/:id" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div style={{ fontFamily: 'sans-serif', textAlign: 'center', padding: '2rem', backgroundColor: '#d0f0c0' }}>
+      <h1 style={{ color: '#555' }}>Nostalgia Clothing</h1>
+      <p>Welcome to our store in Thaba-Bosiu, Maseru, Lesotho.</p>
+      <p>Style meets comfort. Est. 2025.</p>
+    </div>
   );
-}
+};
 
 export default App;
